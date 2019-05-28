@@ -25,3 +25,12 @@ fs.writeFile('byt.txt','Hello New File',err=>{
     }
 });
 
+//DELETE
+
+fs.unlink('./byt.txt',err=>{
+    if(err){
+        console.log(err);
+    }
+    console.log('Inception!');
+})
+
